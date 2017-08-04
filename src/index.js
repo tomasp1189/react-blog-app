@@ -17,9 +17,9 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
-          <Route exact path="/" component={PostsIndex} />
-          <Route path="/posts/:id" component={PostsShow} />
           <Route path="/posts/new" component={PostsNew} />
+          <Route path="/posts/:id" component={PostsShow} />
+          <Route exact path="/" component={PostsIndex} />
         </Switch>
       </div>
     </BrowserRouter>
